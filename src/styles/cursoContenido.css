@@ -1,0 +1,213 @@
+.curso-contenido {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Título */
+.curso-contenido h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #1a237e;
+}
+
+/* Barra de progreso */
+.curso-contenido .barra-progreso-container {
+  margin-bottom: 1.5rem;
+}
+
+.curso-contenido .barra-progreso-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.curso-contenido .barra-progreso-fondo {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 18px;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.curso-contenido .barra-progreso-llenado {
+  height: 18px;
+  background-color: #3f51b5;
+  transition: width 0.5s ease;
+}
+
+.curso-contenido .barra-progreso-llenado.exito {
+  background-color: #4caf50;
+}
+
+/* Mensaje progreso */
+.curso-contenido .mensaje-progreso {
+  font-style: italic;
+  color: #ff9800;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Curso completado */
+.curso-contenido .curso-completado {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  border: 2px solid #4caf50;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.curso-contenido .curso-completado h2 {
+  margin-bottom: 1rem;
+  color: #388e3c;
+}
+
+.curso-contenido .btn-certificado {
+  cursor: pointer;
+  background-color: #4caf50;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.curso-contenido .btn-certificado:hover {
+  background-color: #388e3c;
+}
+
+/* Módulo */
+.curso-contenido .modulo {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(30, 136, 229, 0.2);
+  border: 1px solid #90caf9;
+  transition: box-shadow 0.3s ease;
+}
+
+.curso-contenido .modulo:hover {
+  box-shadow: 0 12px 24px rgba(30, 136, 229, 0.35);
+}
+
+.curso-contenido .modulo h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1565c0;
+  margin-bottom: 1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Tarea */
+.curso-contenido .tarea {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #1976d2;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.curso-contenido .tarea:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.curso-contenido .tarea h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.08);
+}
+
+.curso-contenido .tarea p {
+  color: #555;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+/* ✅ Contenedor de la entrega */
+.curso-contenido .entrega-formulario {
+  display: flex;
+  flex-direction: column;   /* 📌 elementos en columna */
+  gap: 0.75rem;             /* espacio entre ellos */
+  width: 100%;
+}
+
+.curso-contenido .tarea textarea {
+  box-shadow: inset 0 2px 6px rgb(0 0 0 / 0.1);
+  border: 1px solid #90caf9;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-family: inherit;
+  min-height: 100px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.curso-contenido .tarea textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 5px #1976d2;
+}
+
+.curso-contenido .tarea input[type="file"] {
+  cursor: pointer;
+}
+
+.curso-contenido .tarea button {
+  background-color: #1976d2;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(25, 118, 210, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-self: flex-start;
+}
+
+.curso-contenido .tarea button:hover {
+  background-color: #0d47a1;
+  box-shadow: 0 6px 10px rgba(13, 71, 161, 0.6);
+}
+
+/* Mensajes */
+.curso-contenido .mensaje-success {
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+  color: green;
+}
+
+.curso-contenido .mensaje-error {
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+  color: red;
+}
+
+.curso-contenido .tarea a {
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.curso-contenido .tarea a:hover {
+  text-decoration: underline;
+}

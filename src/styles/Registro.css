@@ -1,0 +1,109 @@
+/* Contenedor principal */
+.registration-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Títulos */
+.registration-container .registration-title {
+  text-align: center;
+  color: #0083b0;
+  margin-bottom: 0.5rem;
+}
+
+.registration-container .registration-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Formulario */
+.registration-container .registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-container .form-group {
+  margin-bottom: 1rem;
+}
+
+.registration-container .form-label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.registration-container .form-input,
+.registration-container .form-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.registration-container .form-input:focus,
+.registration-container .form-select:focus {
+  border-color: #0083b0;
+  outline: none;
+}
+
+/* Mensajes */
+.registration-container .error-message {
+  background: #ffe3e3;
+  color: #d93025;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.registration-container .success-message {
+  background: #e0f7e9;
+  color: #2e7d32;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Botón */
+.registration-container .register-submit-button {
+  background: #0083b0;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.registration-container .register-submit-button:hover {
+  background: #006f91;
+}
+
+/* Link de login */
+.registration-container .login-link-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.registration-container .login-link {
+  color: #0083b0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.registration-container .login-link:hover {
+  text-decoration: underline;
+}

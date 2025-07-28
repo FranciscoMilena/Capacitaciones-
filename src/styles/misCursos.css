@@ -1,0 +1,90 @@
+.lista-micursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.curso-card {
+  max-width: 340px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin: 0 auto;
+}
+
+.curso-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.curso-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.curso-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.curso-body h2 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.curso-body p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.3rem 0;  /* 🔹 Espacio entre cada línea */
+  line-height: 1.5;
+}
+
+/* Barra de progreso */
+.progress-text {
+  font-size: 0.85rem;
+  color: #0083b0;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+.progress-container {
+  background: #e0e0e0;
+  border-radius: 6px;
+  height: 10px;
+  margin-bottom: 0.7rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+  transition: width 0.4s ease;
+  border-radius: 6px;
+}
+
+/* Botón */
+.btn-ver {
+  display: block;            /* 🔹 Ocupa toda la línea */
+  text-align: center;        /* 🔹 Centrado */
+  background: #0083b0;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn-ver:hover {
+  background: #006f91;
+}

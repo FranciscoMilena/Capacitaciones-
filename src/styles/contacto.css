@@ -1,0 +1,83 @@
+/* Contenedor general del contacto */
+.contacto-page section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+}
+
+/* Título principal */
+.contacto-page section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #111827;
+}
+
+/* Subtítulo */
+s.contacto-page section p {
+  font-size: 1rem;
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Estilos de las tarjetas de contacto */
+.contacto-page section > div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* Cada tarjeta */
+.contacto-page section > div:nth-of-type(1) > div {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.contacto-page section > div:nth-of-type(1) img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.75rem;
+}
+
+.contacto-page section > div:nth-of-type(1) h3 {
+  font-size: 1.25rem;
+  color: #0c3528;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-page section > div:nth-of-type(1) p,
+.contacto-page section > div:nth-of-type(1) a {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/* Estilos de ubicación */
+.contacto-page section > div:nth-of-type(2) {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contacto-page section > div:nth-of-type(2) h3 {
+  font-size: 1.25rem;
+  color: #424645;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contacto-page section > div:nth-of-type(2) address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
